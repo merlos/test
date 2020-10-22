@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import {Button} from '@material-ui/core'
+import {Button, Box} from '@material-ui/core'
 
 export default function Search({onSearch}) {
   
@@ -10,8 +10,9 @@ export default function Search({onSearch}) {
     onSearch && onSearch(searchString)
   }
   return (
-    <>
-    <Button onClick={handleClick}>Search</Button>
-    </>
+    <Box paddingBottom={2} display="flex">
+    <Button variant="contained" onClick={handleClick}>Search</Button>
+    </Box>
+
   )
 }

@@ -19,9 +19,8 @@ function App() {
   }, [])
 
   const handleSearch = (searchString) => {
+    console.log("Search:", searchString)
   }
-
-  console.log(acronyms)
 
   return ( 
    <>
@@ -30,9 +29,9 @@ function App() {
       <Typography variant="h6">UNICEF Acronyms</Typography>
    </Toolbar>
   </AppBar>
+  <Box padding={2}>
    <Search onSearch={handleSearch} />
-   <Box m={2}>
-   {acronyms.map(acronym => <Acronym acronym={acronym}/>
+   {acronyms.map(acronym => <Acronym key={acronym.id} acronym={acronym}/>
     )
   }
    </Box>
