@@ -11,7 +11,6 @@ export default function Search({onSearch}) {
   }
   return (
     <>
-    {/* TODO add Input field< */}
     <Button onClick={handleClick}>Search</Button>
     </>
   )

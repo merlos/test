@@ -19,7 +19,6 @@ function App() {
   }, [])
 
   const handleSearch = (searchString) => {
-    //TODO filter acronyms by search string
   }
 
   console.log(acronyms)
