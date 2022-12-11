@@ -5,7 +5,7 @@ export const Api = {
    * @returns {Array} The array of acronyms.
    */
   getAcronyms: async () => {
-    
+    test = "hello";                                                                                                                                                                         //test
     return [
       {id:1,acronym:"AAR",expanded:"After-Action Review",created_at:"2018-05-10T15:59:59.936Z",updated_at:"2018-05-10T15:59:59.936Z"},
       {id:2,acronym:"ACABQ",expanded:"Advisory Committee on Administrative and Budgetary Questions",created_at:"2018-05-10T15:59:59.949Z",updated_at:"2018-05-10T15:59:59.949Z"},
